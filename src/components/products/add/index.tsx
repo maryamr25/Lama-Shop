@@ -1,5 +1,5 @@
 'use client'
-import { usewixClient } from "@/hooks/useWixClient"
+import { useWixClient } from "@/hooks/useWixClient"
 import { useCartStore } from "@/hooks/useCartStore";
 import { useState } from "react"
 
@@ -20,7 +20,7 @@ const Add = ({productId,variantId,stockNumber} : {productId:string,variantId:str
     }
   }
 
-const wixClient = usewixClient()
+const wixClient = useWixClient()
 
 const {addItem , isLoading} = useCartStore()
 

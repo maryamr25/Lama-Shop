@@ -4,7 +4,8 @@ import { wixClientServer } from '@/lib/wixClientServer'
 import Image from 'next/image'
 import React, { Suspense } from 'react'
 
-const ListPage = async ({ searchParams } : {searchParams : any}) => {
+const ListPage = async ({ searchParams } : { searchParams : any} ) => {
+ 
   const wixClient = await wixClientServer();
 
   const categ = await wixClient.collections.getCollectionBySlug(searchParams.cat || "all-products")

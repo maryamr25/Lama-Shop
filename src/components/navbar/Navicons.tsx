@@ -6,7 +6,7 @@ import {  useRouter } from "next/navigation"
 import Cookies from "js-cookie";
 import { useEffect, useState } from "react"
 import CartModal from "./CartModal"
-import { usewixClient } from "@/hooks/useWixClient"
+import { useWixClient } from "@/hooks/useWixClient"
 import { useCartStore } from "@/hooks/useCartStore";
 // import { useWixClient } from "@/hooks/useWixClient"
 
@@ -19,7 +19,7 @@ const router = useRouter()
 
 // const pathName = usePathname();
 
-  const wixClient = usewixClient();
+  const wixClient = useWixClient();
   const isLoggedIn = wixClient.auth.loggedIn();
 
 // tempare

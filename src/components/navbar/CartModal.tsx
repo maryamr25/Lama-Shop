@@ -4,7 +4,7 @@
 import Image from "next/image";
 import { useCartStore } from "@/hooks/useCartStore";
 import { media as wixMedia } from "@wix/sdk";
-import { usewixClient } from "@/hooks/useWixClient";
+import { useWixClient } from "@/hooks/useWixClient";
 import Link from "next/link";
 
 // interface Cart {
@@ -18,7 +18,7 @@ const CartModal = () => {
   // TEMPORARY
   // const cartItems = true;
 
-  const wixClient = usewixClient();
+  const wixClient = useWixClient();
   const { cart, isLoading, removeItem } = useCartStore();
 
   // const handleCheckout = async () => {
