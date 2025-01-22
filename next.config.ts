@@ -17,13 +17,6 @@ const nextConfig: NextConfig = {
 
 
 };
-  // next.config.js
-  module.exports = {
-    eslint: {
-      // Disable specific rules
-      ignoreDuringBuilds: true, // This will ignore ESLint errors during production builds
-      // You can add other configurations if needed
-    },
-  }
+
 
 export default nextConfig;
