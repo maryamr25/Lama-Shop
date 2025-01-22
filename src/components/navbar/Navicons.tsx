@@ -57,7 +57,7 @@ const handleLogout = async () => {
   router.push(logoutUrl);
 };
 
-const { cart, counter, getCart } = useCartStore();
+const {  counter, getCart } = useCartStore();
 
   useEffect(() => {
     getCart(wixClient);

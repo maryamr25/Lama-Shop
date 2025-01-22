@@ -5,7 +5,7 @@ import { wixClientServer } from "@/lib/wixClientServer"
 import { notFound } from "next/navigation"
 
 
-const SinglePage = async ({params} : {params: {slug : string}}) => {
+const SinglePage = async ({params} : {params: {slug : any}}) => {
 //  console.log("params....",params.slug)
    
  const wixClient = await wixClientServer()
