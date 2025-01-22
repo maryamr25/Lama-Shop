@@ -31,6 +31,7 @@ export const useCartStore = create<CartState>((set) => ({
         
       });
     } catch (err) {
+      console.error(err);
       set((prev) => ({ ...prev, isLoading: false }));
     }
   },

@@ -61,7 +61,7 @@ const SinglePage = async ({params} : {params: {slug : string}}) => {
        
         <div className="h-[2px] bg-gray-100"/>
        
-       {product.additionalInfoSections?.map((section: any) => (
+       {product.additionalInfoSections?.map((section) => (
 
         <div className="text-sm" key={section.title}>
           <h4 className="font-medium mb-4">{section.title}</h4>

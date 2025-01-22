@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-import { usePathname, useRouter } from "next/navigation"
+import {  useRouter } from "next/navigation"
 import Cookies from "js-cookie";
 import { useEffect, useState } from "react"
 import CartModal from "./CartModal"
@@ -17,7 +17,7 @@ const [isLoading, setIsLoading] = useState(false);
 
 const router = useRouter()
 
-const pathName = usePathname();
+// const pathName = usePathname();
 
   const wixClient = usewixClient();
   const isLoggedIn = wixClient.auth.loggedIn();

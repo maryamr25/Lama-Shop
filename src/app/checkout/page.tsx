@@ -1,11 +1,13 @@
 import React from 'react'
-interface LabelProps {
-    htmlFor: string;
-    className?: string;
-    children: React.ReactNode;
-  }
+// interface LabelProps {
+//     htmlFor: string;
+//     className?: string;
+//     children: React.ReactNode;
+//   }
+
+// : React.FC<LabelProps>{ htmlFor, className, children }
   
-  const CheckOut: React.FC<LabelProps> = ({ htmlFor, className, children }) => {
+  const CheckOut = () => {
 
 
   return (

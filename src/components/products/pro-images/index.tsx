@@ -1,9 +1,9 @@
 'use client'
-import { images } from '@/utils/data'
+// import { images } from '@/utils/data'
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-const ProductsImages = ({items} : {items : any}) => {
+const ProductsImages = ({ items }: { items: any }) => {
   const [index ,setIndex] = useState(0) 
   return (
     <div>

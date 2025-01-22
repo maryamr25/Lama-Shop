@@ -6,7 +6,7 @@ import HomeSlider from "@/components/home/Silder";
 
 // import { WixClientContext } from "@/context/wixContext";
 // import { usewixClient } from "@/hooks/useWixClient";
-import { wixClientServer } from "@/lib/wixClientServer";
+// import { wixClientServer } from "@/lib/wixClientServer";
 import { Suspense } from "react";
 // import { useContext, useEffect } from "react";
 
