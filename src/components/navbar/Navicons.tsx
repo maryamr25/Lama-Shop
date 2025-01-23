@@ -74,7 +74,7 @@ const {  counter, getCart } = useCartStore();
           // onClick={login}
            className="cursor-pointer"/>
         {isProfileOpen && (
-        <div className="absolute p-2 bg-white rounded-md top-14 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20 ">
+        <div className="absolute p-2 bg-white text-black rounded-md top-14 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20 ">
             {/* <Link href='/'> Profile </Link> */}
             <div className=" cursor-pointer" onClick={handleLogout}>
             {isLoading ? "Logging out" : "Logout"}
