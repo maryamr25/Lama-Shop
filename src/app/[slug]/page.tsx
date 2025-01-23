@@ -3,11 +3,26 @@ import CustomizeProducts from "@/components/products/pro-customize"
 import ProductsImages from "@/components/products/pro-images"
 import { wixClientServer } from "@/lib/wixClientServer"
 import { notFound } from "next/navigation"
+// import type { Metadata, ResolvingMetadata } from 'next'
+ 
+// type Props = {
+//   params: Promise<{ id: string }>
+//   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+// }
 
-
-const SinglePage = async ({params} : {params: {slug : any}}) => {
+// const SinglePage = async ({params} : {params: {slug : any}}) => {
 //  console.log("params....",params.slug)
+
+export default async function SinglePage(props: {
+  params: Promise<{ slug: any }>;
+}) {
+
+// export async function generateMetadata(
+//   { params, searchParams }: Props,
+//   parent: ResolvingMetadata
+// ): Promise<Metadata> {
    
+const params = await props.params;
  const wixClient = await wixClientServer()
       
    const products = await wixClient.products.queryProducts()
@@ -78,4 +93,4 @@ const SinglePage = async ({params} : {params: {slug : any}}) => {
   )
 }
 
-export default SinglePage
+// export default SinglePage

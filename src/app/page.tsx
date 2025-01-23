@@ -12,6 +12,7 @@ import { Suspense } from "react";
 
 
 const Home = async () => {
+  
 //   const wixClient = usewixClient()
 
 //   useEffect(() => {
